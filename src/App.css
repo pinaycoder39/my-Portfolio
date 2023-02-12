@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Codec Pro ExtraBold';
+  src: url('./fonts/CodecPro-ExtraBold.woff') format(woff);
+}
+@font-face {
+  font-family: 'Codec Pro Bold';
+  src: url('./fonts/CodecPro-Bold.woff') format(woff);
+}
+body {
+  margin: 0%;
+  background-color: #101728;
+}
+/* Make sure nga ang tanan font is kana */
+* {
+  font-family: 'Codec Pro ExtraBold';
+  color: white;
+}
+/* mao ni ang mama sa options og template */
+.wrapper {
+  /* border: solid 2px black; */
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  height: 600px;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  background-color: #101728;
+
+}
+/* Mama sa mga buttons */
+.options-container {
+  /* border: solid 2px white; */
+  display: flex;   
+  align-self: center;
+  flex-direction: column;
+  width: 100px;
+}
+/* buttons mismo */
+.button {
+  margin: 5px 0px;
+  padding: 30px 0;
+  /* dinhi a ma isbog ang options */
+  padding: 22px 4px 22px 7px ;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+.button:nth-child(1) {
+  background: #9340FF;
+}
+.button:hover {
+  color:  gray;
+}
+/* mama sa description og images */
+.templates {
+  height: 100%;
+  /* border: solid 2px black; */
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(to right, #9340FF , #FF3C5F);
+
+}
+.description-container {
+  /* border: solid 2px black; */
+  width: 50%;
+  align-self: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 10px;
+}
+.description-container p{
+  font-family: 'Codec Pro Bold';
+  font-size: 20px;
+}
+.description-container h1{
+  color: #310e5f;
+  font-size: 70px;
+
+}
+
+.image-container {
+  /* border: solid 2px black; */
+  width: 50%;
+  align-items: center;
+  align-self: center;
+}
+.image-container img {
+  /* border: solid 2px black; */
+  /* besh di gd matunga sa container */
+  margin-left: 50px;
+  border-radius: 50px;
+  height: 400px;
+  width: 400px;
+
+}
+
+.active {
+  color: #9340FF;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  }
+  .options-container {
+    /* border: solid 2px white; */
+    width: 100%;
+    text-align: center;
+  }
+}
+/* animation is testing  */
+
+
+/* Please try this code: */
+
